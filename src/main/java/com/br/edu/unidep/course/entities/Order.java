@@ -12,8 +12,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import org.hibernate.sql.ordering.antlr.GeneratedOrderByFragmentRendererTokenTypes;
-
 import com.br.edu.unidep.course.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -96,7 +94,4 @@ public class Order implements Serializable {
 		Order other = (Order) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
-
 }
